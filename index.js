@@ -9,7 +9,7 @@ function renderer(data, locals) {
 }
 
 renderer.compile = compile;
-renderer.disableNunjucks = false;
+renderer.disableNunjucks = true;
 
 hexo.extend.renderer.register('jsx', 'html', renderer, true);
 hexo.extend.renderer.register('tsx', 'html', renderer, true);
